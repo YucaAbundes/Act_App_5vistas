@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtTituloOperacion5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Operación 5: Números Complejos"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/edtParteReal1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Parte Real 1"
+        android:layout_below="@id/txtTituloOperacion5"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/edtParteImaginaria1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Parte Imaginaria 1"
+        android:layout_below="@id/edtParteReal1"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/edtParteReal2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Parte Real 2"
+        android:layout_below="@id/edtParteImaginaria1"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/edtParteImaginaria2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Parte Imaginaria 2"
+        android:layout_below="@id/edtParteReal2"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:layout_below="@id/edtParteImaginaria2"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="#000000"/>
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/btnCalcular"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btnRegresarOperacion5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regresar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
